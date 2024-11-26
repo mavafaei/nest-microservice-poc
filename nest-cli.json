@@ -1,0 +1,50 @@
+{
+  "monorepo": true,
+  "root": "apps/nestjs-microservices-source",
+  "sourceRoot": "apps/nestjs-microservices-source/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/nestjs-microservices-source/tsconfig.app.json"
+  },
+  "projects": {
+    "nestjs-microservices-source": {
+      "type": "application",
+      "root": "apps/nestjs-microservices-source",
+      "entryFile": "main",
+      "sourceRoot": "apps/nestjs-microservices-source/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nestjs-microservices-source/tsconfig.app.json"
+      }
+    },
+    "api-gateway": {
+      "type": "application",
+      "root": "apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-gateway/tsconfig.app.json",
+        "plugins": []
+      }
+    },
+    "auth-microservice": {
+      "type": "application",
+      "root": "apps/auth-microservice",
+      "entryFile": "main",
+      "sourceRoot": "apps/auth-microservice/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/auth-microservice/tsconfig.app.json",
+        "plugins": []
+      }
+    },
+    "pog-microservice": {
+      "type": "application",
+      "root": "apps/pog-microservice",
+      "entryFile": "main",
+      "sourceRoot": "apps/pog-microservice/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/pog-microservice/tsconfig.app.json",
+        "plugins": []
+      }
+    }
+  }
+}

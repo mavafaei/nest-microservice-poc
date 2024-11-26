@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/apps/api-gateway", 
+    "outDir": "../../dist/apps/auth-microservice", 
     "module": "commonjs",
     "types": ["node"],
     "emitDecoratorMetadata": true,
